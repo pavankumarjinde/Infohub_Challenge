@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "postinstall": "chmod +x ./client/node_modules/.bin/* || true",
+    "postinstall": "chmod +x ./client/node_modules/.bin/vite || true",
     "build": "npm install --prefix client && npm run build --prefix client"
   },
   "dependencies": {
