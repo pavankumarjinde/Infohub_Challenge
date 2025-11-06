@@ -1,0 +1,155 @@
+/* =============== GLOBAL =============== */
+* {
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: radial-gradient(circle at 10% 10%, #0a0f2e, #05060e);
+  color: #f2f5ff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+
+.container {
+  width: 95%;
+  max-width: 800px;
+  background: rgba(20, 26, 58, 0.6);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  padding: 32px;
+  text-align: center;
+}
+
+/* =============== HEADER =============== */
+h1 {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #5da4ff, #9f84ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* =============== TABS =============== */
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.tab {
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: 1px solid #243b7c;
+  background: rgba(24, 31, 70, 0.9);
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #cfd5ff;
+}
+
+.tab:hover {
+  background: rgba(37, 45, 90, 0.95);
+}
+
+.tab.active {
+  background: linear-gradient(90deg, #3454ff, #6b7cff);
+  color: #fff;
+  border: none;
+  box-shadow: 0 0 10px rgba(80, 130, 255, 0.5);
+}
+
+/* =============== CARD =============== */
+.card {
+  background: rgba(10, 13, 40, 0.8);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+/* =============== INPUTS & BUTTONS =============== */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #303f73;
+  background: rgba(12, 16, 45, 0.8);
+  color: #e9ecff;
+  font-size: 1rem;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #597aff;
+  box-shadow: 0 0 8px rgba(80, 110, 255, 0.3);
+}
+
+.button {
+  padding: 10px 18px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #4a6cff, #8f6fff);
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(80, 130, 255, 0.3);
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 15px rgba(100, 150, 255, 0.4);
+}
+
+/* =============== TEXT STYLES =============== */
+.label {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.error {
+  color: #ff7373;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.loading {
+  opacity: 0.8;
+  color: #a0a7d8;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 6px;
+}
+
+small {
+  opacity: 0.7;
+  font-size: 0.85rem;
+  display: block;
+  margin-top: 18px;
+  text-align: center;
+}
